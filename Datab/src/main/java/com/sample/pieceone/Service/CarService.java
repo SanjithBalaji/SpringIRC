@@ -3,6 +3,7 @@ package com.sample.pieceone.Service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import com.sample.pieceone.Repository.CarRepo;
@@ -35,5 +36,11 @@ public sampleone updateInfo(sampleone iu)
 public void deleteInfo(int cid)
 {
 	crepo.deleteById(cid);
+}
+
+//sort by ascending
+public List<sampleone> sortAsc(String brand)
+{
+	return crepo.findAll(Sort.by(brand).ascending());
 }
 }

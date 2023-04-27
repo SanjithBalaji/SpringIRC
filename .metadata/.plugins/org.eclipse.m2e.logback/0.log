@@ -1185,3 +1185,11 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2023-04-25 11:32:52,123 [Worker-5: Launching Datab - DatabApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
 2023-04-25 11:32:52,159 [Worker-5: Launching Datab - DatabApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
 2023-04-25 11:32:52,165 [Worker-5: Launching Datab - DatabApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ssanj\OneDrive\Desktop\SpringIRC\Datab\src\test\resources
+2023-04-26 10:28:22,069 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-04-26 10:48:07,233 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 10:48:07,293 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-26 10:48:07,301 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ssanj\OneDrive\Desktop\SpringIRC\Datab\src\test\resources
+2023-04-26 11:44:26,107 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 11:44:26,135 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-26 11:44:26,138 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ssanj\OneDrive\Desktop\SpringIRC\Datab\src\test\resources
+2023-04-27 09:45:26,541 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

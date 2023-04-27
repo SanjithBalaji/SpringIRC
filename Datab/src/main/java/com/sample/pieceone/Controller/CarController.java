@@ -42,4 +42,10 @@ public class CarController {
 	  cserv.deleteInfo(cid);
 	  return "Car ID "+cid+" Deleted";
   }
+  
+  @GetMapping("/sortAsc/{brand}")
+  public List<sampleone> sortCar(@PathVariable("brand")String brand)
+  {
+	  return cserv.sortAsc(brand);
+  }
 }
