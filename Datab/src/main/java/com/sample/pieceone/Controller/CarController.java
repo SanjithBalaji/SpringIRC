@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.sample.pieceone.Repository.CarRepo;
 import com.sample.pieceone.Service.CarService;
 import com.sample.pieceone.sanjith.sampleone;
 
@@ -43,9 +44,24 @@ public class CarController {
 	  return "Car ID "+cid+" Deleted";
   }
   
+  //sort
   @GetMapping("/sortAsc/{brand}")
   public List<sampleone> sortCar(@PathVariable("brand")String brand)
   {
 	  return cserv.sortAsc(brand);
+  }
+  
+  //pagination
+  @GetMapping("/pagi/{pnu}/{psize}")
+  public List<sampleone> paginationData(@PathVariable("pnu") int pnu, @PathVariable("psize") int psize)
+  {
+	  return cserv.paginationAndSorting(pnu, psize);
+  }
+  
+  //pagination and sorting
+  @GetMapping("/paginationSorting/{pnu}/{psize}/{pname}")
+  public List<sampleone> paginationSorting(@PathVariable("pnu") int pnu, @PathVariable("psize") int psize, @PathVariable("pname") String pname)
+  {
+	  return cserv.paginationAndSorting(pnu, psize, pname);
   }
 }
