@@ -19,6 +19,7 @@ import com.sample.pieceone.sanjith.sampleone;
 public class CarController {
   @Autowired
   public CarService cserv;
+  public CarRepo cre;
   @PostMapping("/saveJdm")
   public sampleone addDetails(@RequestBody sampleone sm)
   {
@@ -64,4 +65,30 @@ public class CarController {
   {
 	  return cserv.paginationAndSorting(pnu, psize, pname);
   }
+  //
+  /*
+  @GetMapping("/getRepo")
+  public List<sampleone> getAll()
+  {
+	  return cre.getAllData();
+  }
+  
+  @GetMapping("/getRepoId/{id}")
+  public List<sampleone> byId(@PathVariable("id")int id)
+  {
+	  return cre.byCName(id);
+  }
+  @PutMapping("/putRepo/{brand}/{id}")
+  public String updateDetails(@PathVariable("name") String bname,@PathVariable("id")int cid)
+  {
+	  cre.updateDetails(bname, cid);
+	  return "Updated";
+  }
+  @DeleteMapping("deleted/{id}/{model}")
+  public String deleteDetails(@PathVariable("id")int cid,@PathVariable("model")String model)
+  {
+	  cre.deleteDetails(cid, model);
+	  return "Deleted";
+  }
+  */
 }
