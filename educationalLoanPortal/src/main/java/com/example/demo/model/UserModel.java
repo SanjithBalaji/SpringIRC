@@ -8,10 +8,11 @@ public class UserModel {
 	@Id
 	private int id;
 	private String email;
+	private String password;
 	private String username;
 	private String mobileNumber;
 	private String userRole;
-	private int loanId;
+	
 	public int getId() {
 		return id;
 	}
@@ -23,6 +24,12 @@ public class UserModel {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	public String getUsername() {
 		return username;
@@ -42,11 +49,7 @@ public class UserModel {
 	public void setUserRole(String userRole) {
 		this.userRole = userRole;
 	}
-	public int getLoanId() {
-		return loanId;
-	}
-	public void setLoanId(int loanId) {
-		this.loanId = loanId;
-	}
+	
+	
 	
 }
